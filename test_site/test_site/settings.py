@@ -27,13 +27,13 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-54-219-138-132.us-west-1.compute.amazonaws.com']
 
 
 # Application definition
 
 INSTALLED_APPS = (
-    'test_site',
+    #'test_site',
     #'/home/ec2-user/test/test_site/',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'test_site.urls'
 #TEMPLATES = [
 #    {
 #        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#        'DIRS': [BASE_DIR, 'templates'],
+#        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
 #        'APP_DIRS': True,
 #        'OPTIONS': {
             # ... some options here ...
